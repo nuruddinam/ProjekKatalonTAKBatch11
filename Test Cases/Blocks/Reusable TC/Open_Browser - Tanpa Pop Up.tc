@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Open_Browser - Tanpa Pop Up</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>7d3c3d69-db95-4c5b-bdfb-7562fc9c4881</testCaseGuid>
+</TestCaseEntity>
