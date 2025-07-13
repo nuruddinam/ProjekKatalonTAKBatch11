@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>TC_MakeAppointment</name>
+   <name>03_TC_MakeAppointment_FieldKosong</name>
    <tag></tag>
    <comment></comment>
    <recordOption>OTHER</recordOption>
-   <testCaseGuid>942967e4-3219-4720-a428-c09a81ed7fe6</testCaseGuid>
+   <testCaseGuid>2cdd1228-a3d2-4398-a1d8-60b605610276</testCaseGuid>
 </TestCaseEntity>

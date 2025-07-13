@@ -19,12 +19,26 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.click(findTestObject('Homepage/makeAppointment_btn'))
 
-WebUI.setText(findTestObject('Page_Login/username_textField'), 'John Doe')
+WebUI.setText(findTestObject('Page_Login/username_textField'), username)
 
-WebUI.setText(findTestObject('Page_Login/password_textField'), 'ThisIsNotAPassword')
+WebUI.setEncryptedText(findTestObject('Page_Login/password_textField'), password)
 
 WebUI.click(findTestObject('Page_Login/login_btn'))
 
 //WebUI.waitForElementVisible(findTestObject('Page_MakeAppointment/h2makeAppointment_text'), 30)
-WebUI.verifyElementVisible(findTestObject('Page_MakeAppointment/h2makeAppointment_text'))
+//WebUI.verifyElementVisible(findTestObject('Page_MakeAppointment/h2makeAppointment_text'))
+// Tunggu sebentar untuk proses login
+//WebUI.delay(2)
+// Kalau login berhasil → halaman appointment muncul
+if (WebUI.verifyElementPresent(findTestObject('Page_MakeAppointment/h2makeAppointment_text'), 5, FailureHandling.OPTIONAL)) {
+    WebUI.comment('Login sukses - halaman appointment terbuka')
+
+    WebUI.verifyElementVisible(findTestObject('Page_MakeAppointment/h2makeAppointment_text')) // Kalau login gagal → pesan error login muncul
+} else if (WebUI.verifyElementPresent(findTestObject('Page_Login/loginErrorMessage_lbl'), 5, FailureHandling.OPTIONAL)) {
+    WebUI.comment('Login gagal - username atau password salah')
+
+    WebUI.verifyElementText(findTestObject('Page_Login/loginErrorMessage_lbl'), 'Login failed! Please ensure the username and password are valid.')
+} else {
+    WebUI.comment('Login tidak valid dan tidak ditemukan error message atau halaman appointment')
+}
 

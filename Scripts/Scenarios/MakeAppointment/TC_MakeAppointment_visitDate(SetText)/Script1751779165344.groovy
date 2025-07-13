@@ -17,20 +17,11 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.selectOptionByValue(findTestObject('Object Repository/Object Recorder/select_Tokyo CURA Healthcare Center        _5b4107'), 
-    'Hongkong CURA Healthcare Center', true)
+WebUI.callTestCase(findTestCase('Blocks/Reusable TC/Open_Browser - Tanpa Pop Up'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Object Repository/Object Recorder/input_Apply for hospital readmission_hospit_63901f'))
+WebUI.callTestCase(findTestCase('Blocks/Login/TC_Login'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Object Repository/Object Recorder/input_Medicaid_programs'))
+WebUI.callTestCase(findTestCase('Blocks/MakeAppointment/Positive/TC_MakeAppointment_visitDate(SetText)'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Object Repository/Object Recorder/input_Visit Date (Required)_visit_date'))
-
-WebUI.click(findTestObject('Object Repository/Object Recorder/td_29'))
-
-WebUI.setText(findTestObject('Object Repository/Object Recorder/textarea_Comment_comment'), 'oke')
-
-WebUI.click(findTestObject('Object Repository/Object Recorder/button_Book Appointment'))
-
-WebUI.verifyElementVisible(findTestObject('Object Recorder/h2_Appointment Confirmation'))
+WebUI.callTestCase(findTestCase('Blocks/Reusable TC/Close_Browser'), [:], FailureHandling.STOP_ON_FAILURE)
 

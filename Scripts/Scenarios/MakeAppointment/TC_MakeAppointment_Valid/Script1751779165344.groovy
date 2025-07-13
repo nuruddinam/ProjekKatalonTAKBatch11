@@ -21,7 +21,7 @@ WebUI.callTestCase(findTestCase('Blocks/Reusable TC/Open_Browser - Tanpa Pop Up'
 
 WebUI.callTestCase(findTestCase('Blocks/Login/TC_Login'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('Blocks/MakeAppointment/TC_MakeAppointment'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Blocks/MakeAppointment/Positive/TC_MakeAppointment'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.callTestCase(findTestCase('Blocks/Reusable TC/Close_Browser'), [:], FailureHandling.STOP_ON_FAILURE)
 
