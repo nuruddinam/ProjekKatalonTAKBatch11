@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_MakeAppointment_Fieldkosong</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>262f686e-a101-4b79-9a91-950745b593ed</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>96281e0c-3abc-4e40-8964-02de30880632</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>41e5a1be-28bd-49b1-a6b7-24ff67945254</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>ae57131a-99a4-46ab-9c9c-d7c88bb365ea</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'Hongkong CURA Healthcare Center'</defaultValue>
+      <description></description>
+      <id>96281e0c-3abc-4e40-8964-02de30880632</id>
+      <masked>false</masked>
+      <name>facility</name>
+   </variable>
+   <variable>
+      <defaultValue>'oke'</defaultValue>
+      <description></description>
+      <id>41e5a1be-28bd-49b1-a6b7-24ff67945254</id>
+      <masked>false</masked>
+      <name>komentar</name>
+   </variable>
+   <variable>
+      <defaultValue>true</defaultValue>
+      <description></description>
+      <id>ae57131a-99a4-46ab-9c9c-d7c88bb365ea</id>
+      <masked>false</masked>
+      <name>readmission</name>
+   </variable>
+</TestCaseEntity>
